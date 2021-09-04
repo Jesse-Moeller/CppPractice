@@ -1,0 +1,8 @@
+//Exercise 1.6
+
+std::cout << "The sum of " << v1;
+          << " and " << v2;  
+          << " is " << v1 + v2 << std::endl;
+
+This code snippet won't run. The << operator needs an ostream object on its left.
+The first line is valid, the others are not.
