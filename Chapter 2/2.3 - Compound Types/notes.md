@@ -6,7 +6,7 @@ More generally, a declaration is a base type followed by a list of declarators. 
 
 ## References
 
-A reference defines an alternative name for an object. A reference is defined by using the declarator &othername.
+A reference defines an alternative name for an object. A reference itself is NOT and object and is defined by using the declarator &othername.
 
 `int my_int;`
 
@@ -39,3 +39,13 @@ When a pointer points to an object, the pointer can be dereferenced using *.
 `int true_int, *int_ptr, &int_ref;`
 
 is a valid declaration of three types. 
+
+Pointers should be initialized right when they are used in order to improve readability. We can initialize pointers with nullptr
+
+`int *ptr_var = nullptr`
+
+`nullptr` is a literal that has a special type that can be converted to any other pointer type.
+
+### Pointers vs. References
+
+Both are compound types. Pointers are objects, but references are not. Pointers use the declarator *ptr and references use &ref. Pointers hold addresses, references are just aliases. You can have a reference to a pointer, but a pointer cannot point to a reference.
